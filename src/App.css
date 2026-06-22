@@ -2,11 +2,23 @@ body{
     background-color: #f2f1e5;
 }
 .navbar-container {
-  padding-inline: clamp(2rem, 5vw, 5rem);
+  /* padding-inline: clamp(2rem, 5vw, 5rem); */
+  width: min(100% - 2rem, 1200px);
+}
+.navbar-brand img{
+  max-width: 200px;
+}
+
+.navbar-nav {
+  gap: 0.5rem;
 }
 
 @media (min-width: 992px) {
   .navbar-collapse {
+    gap: 1.5rem;
+  }
+
+  .navbar-nav {
     gap: 1.5rem;
   }
 }
